@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Pembelajaran | Learn Si-Lang</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <nav>
+        <img src="{{ url_for('static', filename='img/Logo Learn Silang.png')}}" alt="">
+    </nav>
+    <div class="main-menu">
+        <div class="header">
+            <div class="img-header">
+                <img src="{{ url_for('static', filename='img/character2.png')}}" alt="">
+                <img src="{{ url_for('static', filename='img/paper plane.png')}}" alt="">
+            </div>
+            <div class="bg-header">
+                <h1>Ayo <span>belajar</span> teman-teman</h1>
+                <img src="{{ url_for('static', filename='img/outlineimg.png')}}" alt="">
+            </div>
+        </div>
+        <div class="menus">
+            <h1>Menu Pembelajaran</h1>
+            <span>Silahkan pilih salah satu materi pembelajaran bahasa isyarat</span>
+            
+                <div class="learn-menu">
+                    <div class="menu">
+                        <form action="" method="POST">
+                            <input type="text" name="alp" value="alphabet" hidden>
+                            <button type="submit">
+                                <h2>Alphabet</h2>
+                                <img src="{{ url_for('static', filename='img/img-alphabet.png')}}" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="menu">
+                        <form action="">
+                            <input type="text" name="angka" value="angka" hidden>
+                            <button type="submit">
+                                <h2>Angka</h2>
+                                <img src="{{ url_for('static', filename='img/img-angka.png')}}" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="menu">
+                        <button type="submit">
+                            <h2>Warna</h2>
+                            <img src="{{ url_for('static', filename='img/img-warna.png')}}" alt="">
+                        </button>
+                    </div>
+                    <div class="menu">
+                        <button type="submit">
+                            <h2>Buah</h2>
+                            <img src="{{ url_for('static', filename='img/img-buah.png')}}" alt="">
+                        </button>
+                    </div>
+                </div>
+            
+            <div class="learn-menu1">
+                <div class="menu">
+                    <button type="submit">
+                        <h2>Kendaraan</h2>
+                        <img src="{{ url_for('static', filename='img/img-kendaraan.png')}}" alt="">
+                    </button>
+                </div>
+                <div class="menu">
+                    <button type="submit">
+                        <h2>Hewan</h2>
+                        <img src="{{ url_for('static', filename='img/img-hewan.png')}}" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
